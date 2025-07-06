@@ -25,12 +25,12 @@
   /**
    * Gray icons hover
    */
-  --color-dark: #1D202B;
+  --color-dark: #1d202b;
 
   /**
    * Blue icons
    */
-  --color-active-icon: #388AE5;
+  --color-active-icon: #388ae5;
 
   /**
    * Gray border, loaders
@@ -61,20 +61,19 @@
   --icon-size: 20px;
   --icon-size--mobile: 28px;
 
-
   /**
    * The main `.cdx-block` wrapper has such vertical paddings
    * And the Block Actions toggler too
    */
   --block-padding-vertical: 0.4em;
 
-  --color-line-gray: #EFF0F1;
+  --color-line-gray: #eff0f1;
 
   --overlay-pane {
     position: absolute;
-    background-color: #FFFFFF;
-    border: 1px solid #E8E8EB;
-    box-shadow: 0 3px 15px -3px rgba(13,20,33,0.13);
+    background-color: #ffffff;
+    border: 1px solid #e8e8eb;
+    box-shadow: 0 3px 15px -3px rgba(13, 20, 33, 0.13);
     border-radius: 6px;
     z-index: 2;
 
@@ -92,17 +91,17 @@
         margin-left: 0;
       }
     }
-  };
+  }
 
   --button-focused {
     box-shadow: inset 0 0 0px 1px rgba(7, 161, 227, 0.08);
     background: rgba(34, 186, 255, 0.08) !important;
-  };
+  }
 
   --button-active {
     background: rgba(56, 138, 229, 0.1);
-    color:  var(--color-active-icon);
-  };
+    color: var(--color-active-icon);
+  }
 
   --button-disabled {
     color: var(--grayText);
@@ -124,11 +123,6 @@
     align-items: center;
     user-select: none;
 
-    @media (--mobile){
-      width: var(--toolbox-buttons-size--mobile);
-      height: var(--toolbox-buttons-size--mobile);
-    }
-
     @media (--can-hover) {
       &:hover {
         background-color: var(--bg-light);
@@ -140,7 +134,7 @@
       animation: bounceIn 0.75s 1;
       animation-fill-mode: forwards;
     }
-  };
+  }
 
   /**
    * Tool icon with border
@@ -175,4 +169,3 @@
     }
   }
 }
-

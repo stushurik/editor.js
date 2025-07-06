@@ -18,12 +18,16 @@
     [contenteditable]:empty::after {
       content: "\feff ";
     }
+
+    @media (--mobile) {
+      margin-left: 30px;
+    }
   }
 
   /**
    * Styles for narrow holder
    */
-  &--narrow &__redactor {
+  /* &--narrow &__redactor {
     @media (--not-mobile) {
       margin-right: var(--narrow-mode-right-padding);
     }
@@ -40,7 +44,7 @@
     @media (--not-mobile) {
       right: -5px;
     }
-  }
+  } */
 
   &-copyable {
     position: absolute;
@@ -67,10 +71,10 @@
     }
 
     &__rectangle {
-       position: absolute;
-       pointer-events: none;
-       background-color: rgba(46, 170, 220, 0.2);
-       border: 1px solid transparent;
+      position: absolute;
+      pointer-events: none;
+      background-color: rgba(46, 170, 220, 0.2);
+      border: 1px solid transparent;
     }
   }
 
@@ -82,17 +86,16 @@
     stroke: currentColor;
   }
 
-
   /**
   * Set color for native selection
   */
-  ::selection{
+  ::selection {
     background-color: var(--inlineSelectionColor);
   }
 }
 
-
-.codex-editor--toolbox-opened [contentEditable=true][data-placeholder]:focus::before {
+.codex-editor--toolbox-opened
+  [contentEditable="true"][data-placeholder]:focus::before {
   opacity: 0 !important;
 }
 
